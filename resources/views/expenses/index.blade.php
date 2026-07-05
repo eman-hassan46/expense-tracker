@@ -127,8 +127,13 @@
 
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label">Amount</label>
-                                    <input type="number" step="0.01" name="amount" value="{{ old('amount') }}"
-                                        class="form-control">
+                                    <input
+    type="number"
+    step="0.01"
+    min="1"
+    name="amount"
+    value="{{ old('amount') }}"
+    class="form-control">
                                 </div>
 
                                 <div class="col-md-6 mb-3">
